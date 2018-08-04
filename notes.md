@@ -133,61 +133,55 @@ Comparing Platforms
 Apple
 
 	* Service worker and app manifest support
-	* Worldwide: Android 86.2% vs IOS 12.9%
-	* US: Android 60.1% vs IOS 37.4%
 
 
 Microsoft
+    * Excellent User Experience
+        * Want web apps on windows to be your best experience.
+        * Progressive store apps are first class citizens of the MS store - they want your pwa to be your windows store app
+    * PWA In-Store Apps are UWP Apps
+        * Proliferation of web frameworks and tools makes building UWP apps as a PWA very attractive.
+    * Auto discovery or publish to the store
+        * PWA Builder
+    * sonarwhal - Scans and tells you how you can make improvements to your site
+    PWAs installed on Windows 10 enjoy all the benefits of running as Universal Windows Platform (UWP) apps, including protection through Windows app sandboxing security and full access to Windows Runtime (WinRT) APIs, including those for:
+    Controlling device features (such as camera, microphone, GPS)
+    Accessing user resources (such as calendar, contacts, documents, music)
+    Launching / navigating your app through Cortana voice commands
+    Integrating with the Windows OS (through the Windows Action Center, desktop taskbar, and context menus)
+    ...and these are only a few of the added possibilities for your PWA on Windows!
 
-Demo - mobile.twitter.com - UWP PWA
+    A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (WWAHost.exe process) window.  Has to be installed from the store to become a UWP app and not a web site running in Edge.
+
+Demo
+    * Example Windows Store PWA - MyCARFAX
+    * mobile.twitter.com - UWP PWA
 
 Why would I build a progressive web app now?
 
 	* Good option for enterprise applications
-
-		* less expensive to maintain and deploy
 		* skip the app store
 	* Performance, performance, performance - the most important app feature
 	* Less expensive to build and deploy
-
 		* Good option for smaller shops
-	* Support is on the way
-
-		* Apple has announced they are working on it for web kit, but there is not a lot of information or a time-line.
-		* At the most recent Build conference MS committed to allowing PWAs in the windows store so that they will be indistinguishable from UWP apps.  They are also adding support to Edge.  They initially hoped to release this in the fall creators update, but it didn't happen.
-
-
-App Shell
-
-	* Minimum artifacts to load the application
-	* Optimize asset loading
-	* Determine critical assets  
-
+	* Community Momentum / Increasing Support
 
 Service Workers
-
 	* JavaScript Worker
-
 		* It's a JavaScript Worker, so it can't access the DOM directly. Instead, a service worker can communicate with the pages it controls by responding to messages sent via the postMessage interface, and those pages can manipulate the DOM if needed.  Service worker is a programmable network proxy, allowing you to control how network requests from your page are handled.
 	* Runs outside the page context
-
 		* It's terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's onfetch and onmessage handlers. If there is information that you need to persist and reuse across restarts, service workers do have access to the IndexedDB API.
 	* Advanced caching, background sync, and push notifications
-
 		* https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 		* 
 
-
-
 Demo: Simple service worker
 
-Advanced Service Workers Topics
+Advanced Service Worker Topics
 
 	* Versioning 
-
 		* Service worker activation rules and dealing with new state
 	* Caching Strategies - https://serviceworke.rs/strategy-network-or-cache.html
-
 		* Cache 
 		* Cache, falling back to network
 		* Network only
@@ -195,8 +189,6 @@ Advanced Service Workers Topics
 	* Background Synchronization
 	* Push Notifications
 	* Cross page communication
-
- 
 
 Web App Manifest
 
@@ -212,6 +204,12 @@ Web App Manifest
 
 Demo: Web App Manifest
 
+App Shell
+
+	* Minimum artifacts to load the application
+	* Optimize asset loading
+	* Determine critical assets  
+
 Future of the web
 
 	* Accepting Payments with the Payment Request API
@@ -220,7 +218,6 @@ Future of the web
 	* Futuristic APIs with Speech Recognition
 	* Slick Media Playing UIs
 	* Virtual Reality in the Browser with WebVREasy Sharing to and from Your App
-
 
 
 Thank you for your time.
@@ -270,16 +267,7 @@ https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/microsoft-s
 Accessing Windows features from a Store Installed app
 https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features
 
-PWAs installed on Windows 10 enjoy all the benefits of running as Universal Windows Platform (UWP) apps, including protection through Windows app sandboxing security and full access to Windows Runtime (WinRT) APIs, including those for:
-Controlling device features (such as camera, microphone, GPS)
-Accessing user resources (such as calendar, contacts, documents, music)
-Launching / navigating your app through Cortana voice commands
-Integrating with the Windows OS (through the Windows Action Center, desktop taskbar, and context menus)
-...and these are only a few of the added possibilities for your PWA on Windows!
 
-A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (WWAHost.exe process) window.  Has to be installed from the store to become a UWP app and not a web site running in Edge.
-
-Example Windows Store PWA - MyCARFAX
 
 Build presentation by 
 https://www.youtube.com/watch?v=6fb-t9ffDvo
