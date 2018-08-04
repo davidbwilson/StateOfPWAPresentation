@@ -153,7 +153,7 @@ Microsoft
 
     A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (WWAHost.exe process) window.  Has to be installed from the store to become a UWP app and not a web site running in Edge.
 
-Demo
+Demo 
     * Example Windows Store PWA - MyCARFAX
     * mobile.twitter.com - UWP PWA
 
