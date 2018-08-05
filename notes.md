@@ -107,6 +107,8 @@ What are the *core* technologies?
 		* object based
 		* indexed
 		* browser based
+		* A general guideline for data storage is that URL addressable resources should be stored with the Cache interface, and other data should be stored with IndexedDB
+		* IndexedDB is a NoSQL database. IndexedDB data is stored as key-value pairs in object stores.
 
 
 Who maintains the standards?
