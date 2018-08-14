@@ -5,29 +5,24 @@ Who am I?
 	* Not an expert in Progressive Web Apps
 		* Presenting to learn about them and share knowledge
 		* See a lot of advantages and want to implement for my teams applications
+	* A lot to cover - quick presentation - please interrupt
 
 The State of Progressive Web Apps in 2018
 
 	* Background and Overview
 		* What are they?
-			* Collection of technologies and patterns that allow more engaging web applications and greatly improve mobile experience. 
 		* Why should we be excited about them?
-			* Greatly enhance end user experience of web apps
-			* Provide a great delivery mechanism for our applications (mobile + desktop)
-			* Allow web applications to become first class citizens on mobile devices.
 	* Core Technologies 
 		* Service Workers, Manifest, and App Shell Model
 	* Support and New Developments
-		* Microsoft - some exciting new support
-		* Apple - some support
-		* Google
-		* Single Page Applications
+	Not a training session - but in-depth service work presentation coming
+		
 
 Demo - https://app.ft.com - financial times. https://www.trivago.com/code.nasa.gov or twitter?
 
 	* One of the best ways to explain what a PWA is, is just to show some examples.
 	* Show service worker registration and manifest in dev tools
-	* Compare to https://wsj.com (offline vs. online)
+	* Compare to https://google.com (offline vs. online)
 	* Pin to home and open as an application
 
 What are Progressive Web Apps?
@@ -44,6 +39,8 @@ What are Progressive Web Apps?
 		* Rich User Experience of Native combined with the cross-platform and delivery
 		* Uses the web as the delivery mechanism and is just an enhancement to our existing web applications
 	    * Fulfills initial promise of iPhone
+	* Progressive Enhancement
+		* Modernizr
 
 Characteristics of a PWA?
 
@@ -80,7 +77,6 @@ Why would I want to use them?
 Not Convinced?
 
 	* 65% of users install 0 native apps a month
-
 		* Comscore
 	* 84% of users spend time in just 5 apps
 	* 95% on tablets!
@@ -101,7 +97,8 @@ Users are more likely to use your app if:
 	* It's easily discoverable
 	* Linkable (cross device)
 	* It's single click access
-
+	* Load fast
+	* Operate off-line
 
 What are the *core* technologies?
 
@@ -109,7 +106,7 @@ What are the *core* technologies?
 		* Background sync, offline, push notifications, caching
 	* Application manifest
 	* Push notifications
-	* CacheStoraget API
+	* CacheStorage API
 		* this is done in the most unopinionated way possible by exposing a number of basic methods, such as the ability to create and open any number of caches, and store, retrieve, or delete responses in them.  
 		* By combining service workers with the power of CacheStorage, we can get direct programmatic control over what gets cached, what gets removed from the cache, and which responses are returned from the cache and which are returned from the network.
 	* IndexDB
@@ -119,7 +116,6 @@ What are the *core* technologies?
 		* browser based
 		* A general guideline for data storage is that URL addressable resources should be stored with the Cache interface, and other data should be stored with IndexedDB
 		* IndexedDB is a NoSQL database. IndexedDB data is stored as key-value pairs in object stores.
-
 
 Who maintains the standards?
 
@@ -134,11 +130,11 @@ This sounds awesome, what's the catch?
 	* Changing standards
 		* Many of the standards are still in draft and subject to change.
 		* The browsers that are currently supporting the standards are in motion.
+		* Is Service Worker Ready?  https://jakearchibald.github.io/isserviceworkerready/
 	* Functionality still evolving on key platforms.
 		* Google has the best support, but Microsoft is embracing PWAs and Apple has even started supporting them.
 	* CSS look and feel
 		* Won't look the same as a native application (drop shadows, animation speed, layout, etc)
-
 
 Why would I build a progressive web app now?
 
@@ -182,7 +178,7 @@ Advanced Service Worker Topics
 		* Cache, then network
 	* Background Synchronization
 	* Push Notifications
-	* Cross page communication
+	* Google Workbox  - Workbox is a library that bakes in a set of best practices and removes the boilerplate every developer writes when working with service workers.
 
 Web App Manifest
 
@@ -197,13 +193,11 @@ Web App Manifest
 
 Demo: Web App Manifest
 
-Apple
-	* Basic Support
-		* Service worker and app manifest support
-		* Improvement since the last presentation but still far behind
-	* No prompt to pin
-	* Still need some proprietary APIs
-	* Bugs
+Google
+	* Industry leading support
+		*standards, access to device APIs, and debugging.
+	* Less need to publish in the market place
+	* Even supports background sync
 
 Microsoft
     * Excellent User Experience
@@ -223,23 +217,36 @@ Microsoft
 
     A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (WWAHost.exe process) window.  Has to be installed from the store to become a UWP app and not a web site running in Edge.
 
+
 Demo - Microsoft Store - MyCARAX
     * Example Windows Store PWA - MyCARFAX
     * mobile.twitter.com - UWP PWA
 
-Vendor Support Comparison
-	* Google
-		* Industry leading support for standards, access to device APIs, and debugging.
-		* Less need to publish in the market place
-		* Even supports background sync
-	* Microsoft
-		* Great support but for platform access requires installation in the store.
-	* Apple
-		* Some initial support, but need to wrap in order to take advantage of device specific APIs.
-	* Tools for comparing devices:
-		* https://whatwebcando.today/
-    	* https://caniuse.com
+Apple
+	* Basic Support
+		* Service worker and app manifest support
+		* Improvement since the last presentation but still far behind
+	* No prompt to pin
+	* Still need some proprietary APIs
+	* Bugs
+		* https://medium.com/@firt/progressive-web-apps-on-ios-are-here-d00430dee3a7
 
+
+Determining Capabilities
+	* https://whatwebcando.today/
+	* https://caniuse.com
+	* https://jakearchibald.github.io/isserviceworkerready/
+
+
+PWA vs SPA
+	* Not competing technologies
+	* PWA can be used for SPA or Multi-Page Apps
+	* Popular Framework Support
+
+Other Supporting Technologies
+	* PRPL - Push, Render, Pre-Cache, Lazy-load
+	* AMP - 
+	* HTTP/2 Server Push
 
 Future of the web
 	* Accepting Payments with the Payment Request API
@@ -262,6 +269,9 @@ https://developers.google.com/web/progressive-web-apps/
 
 Mozilla API Documentation
 https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+
+Angular Service Worker Support
+https://angular.io/guide/service-worker-intro
 
 Standards:
 https://www.w3.org/TR/appmanifest/
@@ -303,8 +313,10 @@ https://medium.freecodecamp.org/i-built-a-pwa-and-published-it-in-3-app-stores-h
 Progressive web apps on IOS are here
 https://medium.com/@firt/progressive-web-apps-on-ios-are-here-d00430dee3a7
 
-Utilities:
+The Ultimate Guide to Progressive Web Applications
+https://scotch.io/tutorials/the-ultimate-guide-to-progressive-web-applications
 
+Utilities:
 Real Fav Icon Generator
 https://realfavicongenerator.net
 
@@ -316,3 +328,6 @@ https://whatwebcando.today/
 
 PWA Builder from Microsoft (builds manifest and appx)
 https://www.pwabuilder.com/
+
+Google Workbox
+https://developers.google.com/web/tools/workbox/
