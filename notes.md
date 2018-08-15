@@ -15,7 +15,9 @@ The State of Progressive Web Apps in 2018
 	* Core Technologies 
 		* Service Workers, Manifest, and App Shell Model
 	* Support and New Developments
-	Not a training session - but in-depth service work presentation coming
+	* Not a training session 
+		* Give enough information to excite / encourage further exploration
+		* Hoping to give a in-depth service work presentation later this year
 		
 
 Demo - https://app.ft.com - financial times. https://www.trivago.com/code.nasa.gov or twitter?
@@ -33,8 +35,6 @@ What are Progressive Web Apps?
         * Service workers
         * Manifest
         * App Shell Architecture
-		* PRPL
-		* You don’t have to implement all features.  Your application can benefit from just a few.
 	* Combines the best of Native and Web Apps
 		* Rich User Experience of Native combined with the cross-platform and delivery
 		* Uses the web as the delivery mechanism and is just an enhancement to our existing web applications
@@ -74,10 +74,10 @@ Why would I want to use them?
 	* Building and maintaining for multiple platforms
 		* Maintaining multiple versions
 
-Not Convinced?
+Consider...
 
 	* 65% of users install 0 native apps a month
-		* Comscore
+		* Comscor
 	* 84% of users spend time in just 5 apps
 	* 95% on tablets!
 	* Web sites reach 4.5 times greater
