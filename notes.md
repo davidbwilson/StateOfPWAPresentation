@@ -133,7 +133,7 @@ This sounds awesome, what's the catch?
 		* Is Service Worker Ready?  https://jakearchibald.github.io/isserviceworkerready/
 	* Functionality still evolving on key platforms.
 		* Google has the best support, but Microsoft is embracing PWAs and Apple has even started supporting them.
-	* CSS look and feel
+	* Look and feel
 		* Won't look the same as a native application (drop shadows, animation speed, layout, etc)
 
 Why would I build a progressive web app now?
@@ -245,7 +245,7 @@ PWA vs SPA
 
 Other Supporting Technologies
 	* PRPL - Push, Render, Pre-Cache, Lazy-load
-	* AMP - 
+	* AMP - Accelerated Mobile Pages
 	* HTTP/2 Server Push
 
 Future of the web
