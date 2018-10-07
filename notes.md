@@ -1,11 +1,11 @@
 XKCD comic while getting ready
 
 Who am I?
-	* David Wilson 
+	* David Wilson / Full Stack Developer in the Raleigh Area
 	* Not an expert in Progressive Web Apps
 		* Presenting to learn about them and share knowledge
 		* See a lot of advantages and want to implement for my teams applications
-	* A lot to cover - quick presentation - please interrupt
+	* Please feel free to interrupt
 
 The State of Progressive Web Apps in 2018
 
@@ -14,7 +14,7 @@ The State of Progressive Web Apps in 2018
 		* Why should we be excited about them?
 	* Core Technologies 
 		* Service Workers, Manifest, and App Shell Model
-	* Support and New Developments
+	* Vendor Support and New Developments
 	* Not a training session 
 		* Give enough information to excite / encourage further exploration
 		* Hoping to give a in-depth service work presentation later this year
@@ -26,18 +26,24 @@ Demo - https://app.ft.com - financial times. https://www.trivago.com/code.nasa.g
 	* Show service worker registration and manifest in dev tools
 	* Compare to https://google.com (offline vs. online)
 	* Pin to home and open as an application
+	* All of this was possible before - but the cross browser support for W3C standards make it a lot easier and more reliable
 
 What are Progressive Web Apps?
 
     * Frances Berriman and Alex Russell in 2015
 		* Designer and Google Chrome Engineer
-	* A core set of technologies for building richer applications using web technologies.
+	* A core set of technologies for building richer applications using exaperience web technologies.
         * Service workers
-        * Manifest
+        * Application Manifest
         * App Shell Architecture
 	* Combines the best of Native and Web Apps
-		* Rich User Experience of Native combined with the cross-platform and delivery
-		* Uses the web as the delivery mechanism and is just an enhancement to our existing web applications
+		* Native
+			* Rich User Experience 
+			* Utilize the native features of the device
+		* Web Application
+			* Improved delivery mechanism (allows skipping the store)
+			* Improved search and discoverability
+			* Single development platform
 	    * Fulfills initial promise of iPhone
 	* Progressive Enhancement
 		* Modernizr
@@ -65,14 +71,17 @@ To be considered a PWA:
 Why would I want to use them?
 
 	* Better web applications
+		* Makes your existing application faster to load and improves user experience
 	* Reach a broader audience
 		* According to a 2016 comScore report, the average person spends 84% of his time on mobile devices using just the top 5 most popular apps. I’m sorry to say, these are not your apps. On tablets that number is even higher, with 95% of user time spent in the top 5 apps.  The same report also presents figures showing that it is much easier to reach a large audience on a mobile site than in a native app. 
-	* Decrease application store friction
+	* Improved delivery - Web vs. Store
 		* Store life-cycle - Publishing and Updating
 		* Discoverability
-		* Difficult to get users to install your app
-	* Building and maintaining for multiple platforms
+		* Always fresh
+	* Improved searchability
+	* Cross-platform
 		* Maintaining multiple versions
+		* It's fun to learn new languages and build new apps, but it's not alway good business.
 
 Consider...
 
@@ -258,3 +267,7 @@ Future of the web
 
 Thank you for your time.
 
+* Futher Research 
+	* browser storage limits
+	* Push notifications
+	
